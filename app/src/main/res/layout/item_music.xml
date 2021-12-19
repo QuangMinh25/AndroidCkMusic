@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="409dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#B7F86B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="#000000"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.182" />
+
+    <TextView
+        android:id="@+id/tvTencs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sơn tùng"
+        android:textColor="#0B0B0B"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.415"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.312" />
+
+    <TextView
+        android:id="@+id/tvTenbaihat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Có chắc yêu là đây"
+        android:textColor="#0B0B0B"
+        app:layout_constraintEnd_toEndOf="@+id/tvTencs"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="@+id/tvTencs"
+        app:layout_constraintTop_toBottomOf="@+id/tvTencs" />
+
+    <Button
+        android:id="@+id/btndelete"
+        android:layout_width="83dp"
+        android:layout_height="35dp"
+        android:background="@color/black"
+        android:text="Xóa"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/btnupdate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnupdate"
+        app:layout_constraintTop_toBottomOf="@+id/btnupdate"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <Button
+        android:id="@+id/btnupdate"
+        android:layout_width="83dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/black"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:textColor="#FBFBFB"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.792"
+        app:layout_constraintStart_toEndOf="@+id/tvTenbaihat"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="52dp"
+        android:layout_height="55dp"
+
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:srcCompat="@drawable/zingg" />
+
+
+    <Button
+        android:id="@+id/btnnghe"
+        android:layout_width="83dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="76dp"
+        android:background="@color/black"
+        android:text="Nghe"
+        android:textAllCaps="false"
+        android:textColor="#FBFBFB"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.793"
+        app:layout_constraintStart_toEndOf="@+id/tvTenbaihat"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
